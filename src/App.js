@@ -4,6 +4,7 @@ function App() {
   return (
     <div className="App" id="quote-box">
 		<p id="text" />
+		<p id="author" />
     </div>
   );
 };
