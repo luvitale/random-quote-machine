@@ -6,6 +6,7 @@ function App() {
 		<p id="text">Text</p>
 		<p id="author">Author</p>
 		<button type="button" id="new-quote">New quote</button>
+		<a href="#" id="tweet-quote">Tweet quote</a>
     </div>
   );
 };
