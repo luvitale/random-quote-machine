@@ -54,6 +54,20 @@ class App extends React.Component {
 		document.body.style.backgroundColor = colors[color];
 		
 		document.getElementById("new-quote").style.backgroundColor = colors[color];
+		
+		document.getElementById("quote-text").animate([
+			{opacity: 0},
+			{opacity: 1}
+		], {
+			duration: 1600
+		});
+		
+		document.getElementById("quote-author").animate([
+			{opacity: 0},
+			{opacity: 1}
+		], {
+			duration: 1600
+		});
 	}
 	
 	changeQuote() {
