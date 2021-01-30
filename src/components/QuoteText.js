@@ -1,4 +1,6 @@
 import React from 'react'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons'
 
 class QuoteText extends React.Component {
 	constructor(props) {
@@ -8,8 +10,12 @@ class QuoteText extends React.Component {
 	render() {
 		return (
 			<div className="QuoteText">
-				<p id="text">{this.props.quote}</p>
-				<p id="author">{this.props.author}</p>
+				<div id="quote-text">
+					<FontAwesomeIcon icon={faQuoteLeft} id="quote-left-icon" /> <span id="text">{this.props.quote}</span>
+				</div>
+				<div id="quote-author">
+					<span id="author">- {this.props.author}</span>
+				</div>
 			</div>
 		);
 	};

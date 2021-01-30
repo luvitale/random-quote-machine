@@ -59,12 +59,17 @@ class App extends React.Component {
 		const {quotesData, quoteText, quoteAuthor} = this.state;
 		
 		return (
-			<div className="App" id="quote-box">
-				<QuoteText
-					quote={quoteText}
-					author={quoteAuthor}
-				/>
-				<QuoteButtons newQuote={this.changeQuote} />
+			<div className="App" id="wrapper">
+				<div id="quote-box">
+					<QuoteText
+						quote={quoteText}
+						author={quoteAuthor}
+					/>
+					<QuoteButtons newQuote={this.changeQuote} />
+				</div>
+				<footer>
+					By <a href="https://gitlab.com/luvitale"> Luciano Nahuel Vitale </a>
+				</footer>
 			</div>
 		);
 	};
