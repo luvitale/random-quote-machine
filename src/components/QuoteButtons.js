@@ -8,8 +8,10 @@ class QuoteButtons extends React.Component {
 	render() {
 		return (
 			<div className="QuoteButtons">
-				<button type="button" id="new-quote" onClick={this.props.newQuote}>New quote</button>
+			
 				<a href="#" id="tweet-quote">Tweet quote</a>
+				<button className="button" id="new-quote" onClick={this.props.newQuote}>New quote</button>
+				
 			</div>
 		);
 	};

@@ -52,6 +52,8 @@ class App extends React.Component {
 		let color = Math.floor(Math.random() * colors.length);
 		document.body.style.color = colors[color];
 		document.body.style.backgroundColor = colors[color];
+		
+		document.getElementById("new-quote").style.backgroundColor = colors[color];
 	}
 	
 	changeQuote() {
