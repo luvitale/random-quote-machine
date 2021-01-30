@@ -14,6 +14,7 @@ class App extends React.Component {
 		};
 		this.getQuotes = this.getQuotes.bind(this);
 		this.changeQuote = this.changeQuote.bind(this);
+		this.changeQuoteGUI = this.changeQuoteGUI.bind(this);
 		this.getRandomQuote = this.getRandomQuote.bind(this);
 	};
 	
@@ -45,6 +46,14 @@ class App extends React.Component {
 		];
 	};
 	
+	changeQuoteGUI() {
+		const {colors} = this.props;
+		
+		let color = Math.floor(Math.random() * colors.length);
+		document.body.style.color = colors[color];
+		document.body.style.backgroundColor = colors[color];
+	}
+	
 	changeQuote() {
 		console.log("Change quote");
 		
@@ -53,6 +62,8 @@ class App extends React.Component {
 			quoteText: randomQuote.quote,
 			quoteAuthor: randomQuote.author
 		});
+		
+		this.changeQuoteGUI();
 	};
 	
 	render() {
