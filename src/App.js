@@ -53,7 +53,10 @@ class App extends React.Component {
 		document.body.style.color = colors[color];
 		document.body.style.backgroundColor = colors[color];
 		
-		document.getElementById("new-quote").style.backgroundColor = colors[color];
+		const buttonElements = document.getElementsByClassName("button");
+		Array.prototype.map.call(buttonElements, elem => 
+			elem.style.backgroundColor = colors[color]
+		);
 		
 		document.getElementById("quote-text").animate([
 			{opacity: 0},

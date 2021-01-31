@@ -82,12 +82,24 @@ div {
       margin-top: 30px;
       opacity: 1;
       cursor: pointer;
+	  transition: background-color 2s;
       &:hover {
         opacity: 0.9;
       }
+	  
+	  &#tweet-quote {
+        float: left;
+        padding: 0px;
+        padding-top: 8px;
+        text-align: center;
+        font-size: 1.2em;
+        margin-right: 5px;
+        height: 30px;
+        width: 40px;
+      }
+	  
       &#new-quote {
         float: right;
-		transition: background-color 3s;
       }
     }
   }
