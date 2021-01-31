@@ -88,7 +88,7 @@ div {
         opacity: 0.9;
       }
       
-      &#tweet-quote {
+      &#tweet-quote, &#whatsapp-quote {
         float: left;
         padding: 0px;
         padding-top: 8px;
@@ -96,15 +96,12 @@ div {
         font-size: 1.2em;
         height: 30px;
         width: 40px;
+        margin-right: 5px;
       }
       
       &#new-quote {
         float: right;
       }
-    }
-    
-    #twitter-share-button {
-      float: left;
     }
   }
 }
