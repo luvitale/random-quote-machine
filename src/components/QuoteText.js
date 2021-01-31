@@ -11,7 +11,7 @@ class QuoteText extends React.Component {
 		return (
 			<div className="QuoteText">
 				<div id="quote-text">
-					<FontAwesomeIcon icon={faQuoteLeft} id="quote-left-icon" /> <span id="text">{this.props.quote}</span>
+					<FontAwesomeIcon icon={faQuoteLeft} id="quote-left-icon" /><span id="text">{this.props.quote}</span>
 				</div>
 				<div id="quote-author">
 					<span id="author">- {this.props.author}</span>

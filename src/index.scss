@@ -42,6 +42,8 @@ div {
   background-color: #fff;
   
   .QuoteText {
+    margin-bottom: 30px;
+  
     #quote-text {
       #quote-left-icon {
         font-size: 2em;
@@ -79,28 +81,30 @@ div {
       outline: none;
       font-size: 0.85em;
       padding: 8px 18px 6px 18px;
-      margin-top: 30px;
       opacity: 1;
       cursor: pointer;
-	  transition: background-color 2s;
+      transition: background-color 2s;
       &:hover {
         opacity: 0.9;
       }
-	  
-	  &#tweet-quote {
+      
+      &#tweet-quote {
         float: left;
         padding: 0px;
         padding-top: 8px;
         text-align: center;
         font-size: 1.2em;
-        margin-right: 5px;
         height: 30px;
         width: 40px;
       }
-	  
+      
       &#new-quote {
         float: right;
       }
+    }
+    
+    #twitter-share-button {
+      float: left;
     }
   }
 }

@@ -95,7 +95,11 @@ class App extends React.Component {
 						quote={quoteText}
 						author={quoteAuthor}
 					/>
-					<QuoteButtons newQuote={this.changeQuote} />
+					<QuoteButtons
+						newQuote={this.changeQuote}
+						quoteText={quoteText}
+						quoteAuthor={quoteAuthor}
+					/>
 				</div>
 				<footer>
 					By <a href="https://gitlab.com/luvitale"> Luciano Nahuel Vitale </a>
